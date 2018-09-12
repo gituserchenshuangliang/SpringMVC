@@ -1,0 +1,94 @@
+2 [mvc] 18/09/10 16:58:57,074 17834 [INFO  ] [main] c.s.m.c.u.PropertyConfigurer.loadProperties(PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [constants/constants.properties]
+4 [mvc] 18/09/10 16:58:57,094 17854 [WARN  ] [main] c.s.m.c.u.PropertyConfigurer.loadProperties(PropertiesLoaderSupport.java:181) - Could not load properties from class path resource [constants/constants.properties]: class path resource [constants/constants.properties] cannot be opened because it does not exist
+6 [mvc] 18/09/10 16:59:00,877 21637 [INFO  ] [main] c.a.d.p.DruidDataSource.init(DruidDataSource.java:721) - {dataSource-1} inited
+8 [mvc] 18/09/10 16:59:02,453 23213 [DEBUG ] [main] n.s.e.c.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:148) - Configuring ehcache from InputStream
+10 [mvc] 18/09/10 16:59:02,537 23297 [DEBUG ] [main] n.s.e.u.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+12 [mvc] 18/09/10 16:59:02,553 23313 [DEBUG ] [main] n.s.e.CacheManager.detectAndFixDiskStorePathConflict(CacheManager.java:656) - No disk store path defined. Skipping disk store path conflict test.
+14 [mvc] 18/09/10 16:59:02,554 23314 [DEBUG ] [main] n.s.e.c.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+16 [mvc] 18/09/10 16:59:02,608 23368 [DEBUG ] [main] n.s.e.Cache.createBootstrapCacheLoader(Cache.java:968) - No BootstrapCacheLoaderFactory class specified. Skipping...
+18 [mvc] 18/09/10 16:59:02,608 23368 [DEBUG ] [main] n.s.e.Cache.createCacheWriter(Cache.java:942) - CacheWriter factory not configured. Skipping...
+20 [mvc] 18/09/10 16:59:02,610 23370 [DEBUG ] [main] n.s.e.c.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+22 [mvc] 18/09/10 16:59:02,753 23513 [DEBUG ] [main] n.s.e.s.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.springmvc.mybatis.security.AuthorizingRealmImpl.authorizationCache
+24 [mvc] 18/09/10 16:59:02,758 23518 [DEBUG ] [main] n.s.e.Cache.initialise(Cache.java:1165) - Initialised cache: cn.springmvc.mybatis.security.AuthorizingRealmImpl.authorizationCache
+26 [mvc] 18/09/10 16:59:02,758 23518 [DEBUG ] [main] n.s.e.c.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:361) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.springmvc.mybatis.security.AuthorizingRealmImpl.authorizationCache'.
+28 [mvc] 18/09/10 16:59:06,489 27249 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+30 [mvc] 18/09/10 16:59:06,571 27331 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ==>  Preparing: select id , name , code , remark from t_sys_role WHERE CODE=? 
+32 [mvc] 18/09/10 16:59:06,580 27340 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ==> Parameters: boss_role(String)
+34 [mvc] 18/09/10 16:59:06,756 27516 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+36 [mvc] 18/09/10 16:59:06,756 27516 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+38 [mvc] 18/09/10 16:59:06,759 27519 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 0594941952e34713980fc72dad61caa2(String), 业务管理(String), leaveBill(String), 1(Integer), null, 1(Integer), leaveBill(String)
+40 [mvc] 18/09/10 16:59:06,886 27646 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+42 [mvc] 18/09/10 16:59:06,888 27648 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+44 [mvc] 18/09/10 16:59:06,888 27648 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+46 [mvc] 18/09/10 16:59:06,890 27650 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 7297ca6476b84c668786f9f4d50a3d41(String), 请假管理(String), home(String), 1(Integer), activiti/home(String), 2(Integer), leaveBill(String)
+48 [mvc] 18/09/10 16:59:06,918 27678 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+50 [mvc] 18/09/10 16:59:06,920 27680 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+52 [mvc] 18/09/10 16:59:06,920 27680 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+54 [mvc] 18/09/10 16:59:06,922 27682 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: dfe4a1919a524a84a10afa4fc7329b69(String), 流程管理(String), workflow(String), 1(Integer), null, 3(Integer), workflow(String)
+56 [mvc] 18/09/10 16:59:07,241 28001 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+58 [mvc] 18/09/10 16:59:07,242 28002 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+60 [mvc] 18/09/10 16:59:07,243 28003 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+62 [mvc] 18/09/10 16:59:07,245 28005 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 53cae4b24d3348abb304c4e57af4ada6(String), 部署管理(String), deployHome(String), 1(Integer), activiti/deployHome(String), 4(Integer), workflow(String)
+64 [mvc] 18/09/10 16:59:07,494 28254 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+66 [mvc] 18/09/10 16:59:07,495 28255 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+68 [mvc] 18/09/10 16:59:07,495 28255 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+70 [mvc] 18/09/10 16:59:07,496 28256 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: cc715e9129174eb58b0d86bc505116e5(String), 任务管理(String), listTask(String), 1(Integer), activiti/listTask(String), 5(Integer), workflow(String)
+72 [mvc] 18/09/10 16:59:07,561 28321 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+74 [mvc] 18/09/10 16:59:07,562 28322 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+76 [mvc] 18/09/10 16:59:07,563 28323 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+78 [mvc] 18/09/10 16:59:07,565 28325 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 23b90b9d44344fb2995c708de8fcd448(String), 文件上传(String), upload(String), 1(Integer), null, 7(Integer), upload(String)
+80 [mvc] 18/09/10 16:59:07,594 28354 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+82 [mvc] 18/09/10 16:59:07,596 28356 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+84 [mvc] 18/09/10 16:59:07,597 28357 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+86 [mvc] 18/09/10 16:59:07,600 28360 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 918d0e2c26784296a3023199e7d2e2ca(String), ajax上传文件(String), ajaxupload(String), 1(Integer), upload/ajax(String), 8(Integer), upload(String)
+88 [mvc] 18/09/10 16:59:07,650 28410 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+90 [mvc] 18/09/10 16:59:07,651 28411 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+92 [mvc] 18/09/10 16:59:07,652 28412 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+94 [mvc] 18/09/10 16:59:07,653 28413 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 5aa0507d38144dfc905a0653c156c211(String), spring上传文件(String), springupload(String), 1(Integer), upload/spring(String), 9(Integer), upload(String)
+96 [mvc] 18/09/10 16:59:07,705 28465 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+98 [mvc] 18/09/10 16:59:07,706 28466 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+100 [mvc] 18/09/10 16:59:07,707 28467 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+102 [mvc] 18/09/10 16:59:07,708 28468 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: b1f5152f66c341e18fac4d26191f8a73(String), Excel导入(String), importexcel(String), 1(Integer), import/index(String), 10(Integer), upload(String)
+104 [mvc] 18/09/10 16:59:07,727 28487 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+106 [mvc] 18/09/10 16:59:07,729 28489 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+108 [mvc] 18/09/10 16:59:07,730 28490 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+110 [mvc] 18/09/10 16:59:07,731 28491 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 181eb0d7935d4697aabd8c50945c3234(String), 文件下载(String), download(String), 1(Integer), null, 101(Integer), download(String)
+112 [mvc] 18/09/10 16:59:07,749 28509 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+114 [mvc] 18/09/10 16:59:07,750 28510 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+116 [mvc] 18/09/10 16:59:07,751 28511 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+118 [mvc] 18/09/10 16:59:07,752 28512 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 1b05e5c7b36e49f8bd59ed119f3ac521(String), zip下载(String), zipupload(String), 1(Integer), download/zip(String), 102(Integer), download(String)
+120 [mvc] 18/09/10 16:59:07,771 28531 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+122 [mvc] 18/09/10 16:59:07,772 28532 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+124 [mvc] 18/09/10 16:59:07,773 28533 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+126 [mvc] 18/09/10 16:59:07,774 28534 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 8886bde7f18645fa918fdf2ecf47eca4(String), 用户管理(String), user(String), 1(Integer), null, 201(Integer), user(String)
+128 [mvc] 18/09/10 16:59:07,816 28576 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+130 [mvc] 18/09/10 16:59:07,817 28577 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+132 [mvc] 18/09/10 16:59:07,818 28578 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+134 [mvc] 18/09/10 16:59:07,819 28579 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: d0a5a9bb4722495fb9a5c28c18b216c2(String), 新增(String), register(String), 1(Integer), user/register(String), 202(Integer), user(String)
+136 [mvc] 18/09/10 16:59:07,849 28609 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+138 [mvc] 18/09/10 16:59:07,850 28610 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+140 [mvc] 18/09/10 16:59:07,850 28610 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+142 [mvc] 18/09/10 16:59:07,851 28611 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 5bd0ae82035b48c19b059e0027489a09(String), JQuery(String), search(String), 1(Integer), null, 301(Integer), search(String)
+144 [mvc] 18/09/10 16:59:07,893 28653 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+146 [mvc] 18/09/10 16:59:07,896 28656 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+148 [mvc] 18/09/10 16:59:07,897 28657 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+150 [mvc] 18/09/10 16:59:07,899 28659 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 805fdc6bbf3e4051ba210336a330a67d(String), 快速查询(String), jquerysearch(String), 1(Integer), jq(String), 302(Integer), search(String)
+152 [mvc] 18/09/10 16:59:07,938 28698 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+154 [mvc] 18/09/10 16:59:07,939 28699 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+156 [mvc] 18/09/10 16:59:07,939 28699 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+158 [mvc] 18/09/10 16:59:07,941 28701 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 9da0a43c8a554f37b24f6dd018176ddd(String), 新闻(String), news(String), 1(Integer), null, 401(Integer), news(String)
+160 [mvc] 18/09/10 16:59:07,993 28753 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+162 [mvc] 18/09/10 16:59:07,994 28754 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+164 [mvc] 18/09/10 16:59:07,995 28755 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+166 [mvc] 18/09/10 16:59:07,996 28756 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: bfec028555f64fd997295502c3818553(String), 新增新闻(String), newsadd(String), 1(Integer), news(String), 402(Integer), news(String)
+168 [mvc] 18/09/10 16:59:08,037 28797 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+170 [mvc] 18/09/10 16:59:08,038 28798 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+172 [mvc] 18/09/10 16:59:08,039 28799 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==>  Preparing: INSERT INTO T_SYS_PERMISSION(ID , NAME , SKEY , HIDE , URL, SORT , PARENT_KEY) VALUES(? , ? , ? , ? , ? , ? , ?) 
+174 [mvc] 18/09/10 16:59:08,039 28799 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - ==> Parameters: 045483239476424a9948b1f7a54152da(String), 新增列表(String), newssearch(String), 1(Integer), news/list(String), 403(Integer), news(String)
+176 [mvc] 18/09/10 16:59:08,082 28842 [DEBUG ] [main] c.s.m.m.a.P.insert.debug(BaseJdbcLogger.java:132) - <==    Updates: 1
+178 [mvc] 18/09/10 16:59:08,083 28843 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+180 [mvc] 18/09/10 16:59:08,083 28843 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ==>  Preparing: select id , name , code , remark from t_sys_role WHERE CODE=? 
+182 [mvc] 18/09/10 16:59:08,084 28844 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ==> Parameters: boss_role(String)
+184 [mvc] 18/09/10 16:59:08,090 28850 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26d41711]
+186 [mvc] 18/09/10 16:59:08,092 28852 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ==>  Preparing: select id , name , code , remark from t_sys_role WHERE CODE=? 
+188 [mvc] 18/09/10 16:59:08,093 28853 [DEBUG ] [main] c.s.m.m.a.R.findRoleByCode.debug(BaseJdbcLogger.java:132) - ==> Parameters: boss_role(String)
